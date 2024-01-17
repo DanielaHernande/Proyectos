@@ -1,0 +1,23 @@
+* {
+  color: white;
+  background-color: rgb(21, 26, 64);
+}
+
+button {
+  color: black;
+  background-color: white;
+}
+
+form input {
+color: black;
+background-color: white;
+}
+
+img {
+  width: 100px;
+  height: 80px;
+  padding: 1px;
+  margin-top: 20px;
+}
+
+
