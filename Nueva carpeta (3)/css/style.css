@@ -52,33 +52,11 @@ body #btnAbrirModal {
 
 
 /*Estilos pantallas grandes*/
-#miModal .modal-body .contenedorScreemNormal h2{
-
-    color: #A82C48;
-    position: relative;
-    bottom: 700px;
-    left: 1000px;
-
-}
-
-#miModal .modal-body .contenedorScreemNormal p{
-
-    color: #A82C48;
-    position: relative;
-    bottom: 700px;
-    left: 1000px;
-
-}
 
 
 
 /*Linea vertical que aparece en pantallas grandes*/
-#miModal .modal-body  .linea-vertical
-{
-    width: 10px;
-    height: 800px;
-    background-color: #A82C48;
-}
+
 
 
 @media screen and (min-width: 1203px) {
@@ -86,25 +64,81 @@ body #btnAbrirModal {
     #miModal .modal-body .contenedorimg  img{
 
         position: relative;
-        bottom: -200px;
+        bottom: -100px;
         width: 600px;
         height: 400px;
-        right: 200px;
+        right: 220px;
     }
 
     #miModal .modal-body .contenedorimg {
         background-color: gray;
-        height: 800px;
+        height: 0px;
     }
 
     #miModal .modal-body .linea-vertical {
 
         position: relative;
-        bottom: 645px;
-        left: 700px;
-        width: 10px;
+        top: 40px;
+        left: 675px;
+        width: 12px;
         height: 500px;
         background-color: #A82C48;
     }
+/*=============================================================*/
+    #miModal .modal-body .contenedorScreemNormal .precio {
 
+        color: #A82C48;
+    }
+
+
+    #miModal .modal-body .contenedorScreemNormal .tituloScreenNormal {
+
+        color:#A82C48;
+        position: relative;
+        bottom: 450px;
+        left: 840px;
+        font-size: 70px;
+    
+    }
+
+
+    #miModal .modal-body .contenedorScreemNormal p {
+
+        color:#A82C48;
+        position: relative;
+        bottom: 420px;
+        left: 750px;
+        font-size: 25px;
+    
+    }
+
+
+    #miModal .modal-body .contenedorScreemNormal h2 {
+
+        color:#A82C48;
+        position: relative;
+        bottom: 300px;
+        left: 750px;
+        font-size: 40px;
+    
+    }
+
+
+    #miModal .modal-body .contenedorScreemNormal button {
+
+        color:#A82C48;
+        position: relative;
+        bottom: 300px;
+        width: 170 ;
+        left: 750px;
+        font-size: 15px;
+    
+    }
+
+
+
+}
+
+.modal-body {
+    background-color: blue;
 }
