@@ -1,29 +1,29 @@
-/*================= Abrir Modal =================*/
+
+/*================= Abrir Modal de informacion de los productos =================*/
 
 /*Boton para abrir el MOdal*/
-body #btnAbrirModal {
+body #btnAbrirModalInfo {
 
     margin-top: 50px;
     margin-left: 50px;
     background-color: #A82C48;
 }
-/*Boton para abrir el MOdal*/
+/*Boton para abrir el Modal*/
 
-/*================= Abrir Modal =================*/
+/*================= Abrir Modal de informacion de los productos =================*/
 
 
 /*================= Cuerpo del Modal =================*/
 
 /*Poner el texto en color negro en todas las pantallas*/
-#miModal .modal-body {
-
+#modalInfo .modal-body {
     color: black;
 }
 /*Poner el texto en colo negro*/
 
 
 /*Estilos del titulo principal en pantallas pequeñas*/
-#miModal .modal-body .tituloPrincipal {
+#modalInfo .modal-body .tituloPrincipal {
 
     top: 100px;
     font-size: 50px;
@@ -34,16 +34,16 @@ body #btnAbrirModal {
 
 
 /*Boton de añadir al carrito en pantallas pequeñas*/
-#miModal .modal-body .contenedorScreemSmall .btnAddCart {
+#modalInfo .modal-body .contenedorScreemSmall .btnAddCart {
 
     color: white;
-    background-color: #A82C48;
+    background-color: var(--primary-color);
 }
 /*Boton de añadir al carrito en pantallas pequeñas*/
 
 
 /*Icono de la canasta en pantallas pequeñas*/
-#miModal .modal-body .contenedorScreemSmall i {
+#modalInfo .modal-body .contenedorScreemSmall i {
 
     color: white;
     font-size: 20px;
@@ -51,94 +51,559 @@ body #btnAbrirModal {
 /*Icono de la canasta en pantallas pequeñas*/
 
 
-/*Estilos pantallas grandes*/
+/*=================== Estilos para pantallas grandes=================== */
+@media screen and (min-width: 1200px) {
 
+    /*Imagen que aparece en pantalals grandes*/
+    #modalInfo .modal-body .contenedorimg  img{
 
-
-/*Linea vertical que aparece en pantallas grandes*/
-
-
-
-@media screen and (min-width: 1203px) {
-
-    #miModal .modal-body .contenedorimg  img{
-
-        position: relative;
-        bottom: -100px;
+        right: 220px;
         width: 600px;
         height: 400px;
-        right: 220px;
-    }
-
-    #miModal .modal-body .contenedorimg {
-        background-color: gray;
-        height: 0px;
-    }
-
-    #miModal .modal-body .linea-vertical {
-
+        bottom: -70px;
         position: relative;
-        top: 40px;
+    }
+    /*Imagen que aparece en pantalals grandes*/
+
+
+    /*Contenedor de la imagen*/
+    #modalInfo .modal-body .contenedorimg {
+
+        height: 0;
+    }
+    /*Contenedor de la imagen*/
+
+
+    /*Linea vertical que aparece en pantallas grandes*/
+    #modalInfo .modal-body .linea-vertical {
+
+        top: 0px;
         left: 675px;
         width: 12px;
         height: 500px;
+        position: relative;
         background-color: #A82C48;
     }
-/*=============================================================*/
-    #miModal .modal-body .contenedorScreemNormal .precio {
+    /*Linea vertical que aparece en pantallas grandes*/
 
-        color: #A82C48;
+
+    /*Organizar el tamaño del "contenedorScreemNormal" en pantallas grandes */
+    #modalInfo .modal-body .contenedorScreemNormal {
+
+        height: 50px;
     }
+    /*Organizar el tamaño del "contenedorScreemNormal" en pantallas grandes */
 
 
-    #miModal .modal-body .contenedorScreemNormal .tituloScreenNormal {
+    /*Titulo principal en pantallas grandes*/
+    #modalInfo .modal-body .contenedorScreemNormal .tituloScreenNormal {
 
-        color:#A82C48;
-        position: relative;
-        bottom: 450px;
-        left: 840px;
+        left: 800px;
+        bottom: 460px;
         font-size: 70px;
-    
-    }
-
-
-    #miModal .modal-body .contenedorScreemNormal p {
-
-        color:#A82C48;
         position: relative;
-        bottom: 420px;
-        left: 750px;
+    }
+    /*Titulo principal en pantallas grandes*/
+
+
+    /*Parrafo principal en pantallas grandes*/
+    #modalInfo .modal-body .contenedorScreemNormal p {
+
+        left: 739px;
+        bottom: 460px;
         font-size: 25px;
-    
-    }
-
-
-    #miModal .modal-body .contenedorScreemNormal h2 {
-
-        color:#A82C48;
         position: relative;
-        bottom: 300px;
-        left: 750px;
+    }
+    /*Parrafo principal en pantallas grandes*/
+
+
+    /*h2 principal en pantallas grandes*/
+    #modalInfo .modal-body .contenedorScreemNormal h2 {
+
+        left: 740px;
+        bottom: 320px;
         font-size: 40px;
-    
-    }
-
-
-    #miModal .modal-body .contenedorScreemNormal button {
-
-        color:#A82C48;
         position: relative;
-        bottom: 300px;
-        width: 170 ;
-        left: 750px;
-        font-size: 15px;
-    
     }
+    /*h2 principal en pantallas grandes*/
 
 
+    /*Boton principal que va dentro del modal en pantallas grandes*/
+    #modalInfo .modal-body .contenedorScreemNormal button {
 
+        left: 740px;
+        width: 170px;
+        bottom: 340px;
+        color: white;
+        font-size: 15px;
+        position: relative;
+        background-color: #A82C48;
+    }
+    /*Boton principal que va dentro del modal en pantallas grandes*/
 }
 
-.modal-body {
-    background-color: blue;
+
+
+/*================= Estilos Modal carrito =================*/
+
+/*Estilos titulo principal*/
+.modalCarrito .tituloPricipalCarrito {
+
+    bottom: 40px;
+    font-size: 50px;
+    position: relative;
 }
+/*Estilos titulo principal*/
+
+/*Estilos precio del carrito en pantallas pequeñas*/
+.modalCarrito .precioCarrito {
+
+    color: #A82C48;
+}
+/*Estilos precio del carrito en pantallas pequeñas*/
+
+
+/*Estilos cantidad del carrito en pantallas pequeñas*/
+.modalCarrito .cantidadCarrito {
+
+    border-radius: 10px;
+    border: 2px solid black;
+}
+/*Estilos cantidad del carrito en pantallas pequeñas*/
+
+
+/*Estilos hr del carrito en pantallas pequeñas*/
+.modalCarrito .separador {
+    border: 1px solid black;
+}
+/*Estilos hr del carrito en pantallas pequeñas*/
+
+/*Estilos hr del carrito en pantallas pequeñas*/
+.modalCarrito .pagar hr {
+    
+    border: 1px solid black;    
+}
+/*Estilos hr del carrito en pantallas pequeñas*/
+
+
+@media screen and (min-width: 365px) {
+    
+    /*Tamaño del modal en pantallas pequeñas*/
+    .modalCarrito {
+
+        height: 100%;
+    }
+    /*Tamaño del modal en pantallas pequeñas*/
+
+    /*Estilos del contenedor de pagar en pantallas pequeñas*/
+    .modalCarrito .pagar {
+    
+        height: 400px;
+        padding: 20px;
+        margin-top: 60px;
+        border-radius: 20px;
+        border: 2px solid black;
+    }
+    /*Estilos del titulo de pagar en pantallas pequeñas*/
+
+    
+    /*Estilos del titulo de precio en pantallas pequeñas*/
+    .modalCarrito .pagar .precioPagar {
+        
+        top: -50px;
+        left: 320px;
+        position: relative;
+    }
+    /*Estilos del titulo de precio en pantallas pequeñas*/
+
+    
+    /*Estilos del titulo de envio en pantallas pequeñas*/
+    .modalCarrito .pagar .envio {
+    
+        top: -50px;
+        left: 320px;
+        position: relative;
+    }
+    /*Estilos del titulo de envio en pantallas pequeñas*/
+
+    /*Estilos del titulo de total en pantallas pequeñas*/
+    .modalCarrito .pagar .totalPagar {
+    
+        top: -60px;
+        left: 320px;
+        position: relative;
+    }
+    /*Estilos del titulo de total en pantallas pequeñas*/
+
+
+    /* Estilos del btn de checkoup en pantalals pequeñas*/
+    .modalCarrito .btnScreenSmall {
+
+        height: 60px;
+        width: 469px;
+        color: white;
+        font-size: 30px;
+        margin-top: 10px;
+        border: #A82C48;
+        border-radius: 15px;
+        background-color: #A82C48;
+    }
+    /* Estilos del btn de checkoup en pantalals pequeñas*/
+}
+
+
+@media screen and (min-width: 1000px) {
+
+    /* Estilos del conteedor de pagar en pantalals medianas*/
+    .modalCarrito .pagar {
+
+        width: 765px;
+        height: 400px;
+        padding: 20px;
+        margin-top: 60px;
+        border-radius: 20px;
+        border: 2px solid black;
+    }
+    /* Estilos del conteedor de pagar en pantalals medianas*/
+
+
+    /* Estilos del titulo de oreder summary en pantalals medianas*/
+    .modalCarrito .pagar .order {
+
+        left: 40px;
+        position: relative;
+    }
+    /* Estilos del titulo de oreder summary en pantalals medianas*/
+
+
+    /* Estilos del titulo del  subtotal en pantalals medianas*/
+    .modalCarrito .pagar .subtotal {
+
+        left: 40px;
+        position: relative;
+    }
+    /* Estilos del titulo del  subtotal en pantalals medianas*/
+
+
+    /* Estilos del titulo del precio en pantalals medianas*/
+    .modalCarrito .pagar .precioPagar {
+    
+        top: -50px;
+        left: 520px;
+        position: relative;
+    }
+    /* Estilos del titulo del precio en pantalals medianas*/
+
+
+    /* Estilos del titulo del titulo de shipping en pantalals medianas*/
+    .modalCarrito .pagar .shipping {
+
+        left: 40px;
+        position: relative;
+    }
+    /* Estilos del titulo del titulo de shipping en pantalals medianas*/
+
+
+    /* Estilos del titulo del envio en pantalals medianas*/
+    .modalCarrito .pagar .envio {
+    
+        top: -50px;
+        left: 520px;
+        position: relative;
+    }
+    /* Estilos del titulo del envio en pantalals medianas*/
+
+
+    /* Estilos del titulo del total en pantalals medianas*/
+    .modalCarrito .pagar .total {
+
+        left: 40px;
+        position: relative;
+    }
+    /* Estilos del titulo del total en pantalals medianas*/
+
+    
+    /* Estilos del ttal a pagar en pantalals medianas*/
+    .modalCarrito .pagar .totalPagar {
+    
+        top: -50px;
+        left: 520px;
+        position: relative;
+    }
+    /* Estilos del ttal a pagar en pantalals medianas*/
+
+
+    /* Estilos del boton en pantalals medianas*/
+    .modalCarrito .btnScreenSmall {
+
+        height: 70px;
+        width: 755px;
+        color: #fff;
+        font-size: 35px;
+        margin-top: 15px;
+        border: #A82C48;
+        border-radius: 15px;
+        background-color: #A82C48;
+    }
+    /* Estilos del boton en pantalals medianas*/
+}
+
+
+@media screen and (min-width: 1200px) {
+
+    /* Tamaño del modal en pantallas grandes*/
+    .modalCarrito {
+
+        height: 650px;
+    }
+    /* Tamaño del modal en pantallas grandes*/
+
+    /*Titulos*/
+    .modalCarrito .titulos .priceTitulos, .cantidadTitulos, .totaltitulos{
+
+        left: 150px;
+        position: relative;
+    }
+    /*Titulos*/
+
+
+    /*Organizar eñ tamaño de la imagen*/
+    .modalCarrito .contenedorScreenNormalCarrito img {
+
+        width: 80px;
+        height: 80px;
+    }
+    /*Organizar eñ tamaño de la imagen*/
+
+
+    /*Organizar la posicion del titulo de la primera imagen en pantallas grandes*/
+    .modalCarrito .contenedorScreenNormalCarrito .titulo1 {
+
+        left: 180px;
+        top: 60px;
+        position: relative;
+    }
+    /*Organizar la posicion del titulo de la primera imagen en pantallas grandes*/
+
+    
+    /*Organizar la posicion del precio de la primera imagen en pantallas grandes*/
+    .modalCarrito .contenedorScreenNormalCarrito .precio1 {
+
+        left: 280px;
+        bottom: 55px;
+        position: relative;
+
+    }
+    /*Organizar la posicion del precio de la primera imagen en pantallas grandes*/
+
+
+    /*Organizar la posicion de la cantidad de la primera imagen en pantallas grandes*/
+    .modalCarrito .contenedorScreenNormalCarrito .cantidad1 {
+
+        left: 400px;
+        width: 100px;
+        bottom: 95px;
+        position: relative;
+        border: 2px solid black;
+    }
+    /*Organizar la posicion de la cantidad de la primera imagen en pantallas grandes*/
+
+    /*Organizar la posicion del total de la primera imagen en pantallas grandes*/
+    .modalCarrito .contenedorScreenNormalCarrito .total1 {
+
+        left: 550px;
+        bottom: 140px;
+        position: relative;
+    }
+    /*Organizar la posicion del total de la primera imagen en pantallas grandes*/
+
+    /*Para organizar el primer hr*/
+    .modalCarrito .contenedorScreenNormalCarrito .hr1 {
+
+        width: 660px;
+        bottom: 100px;
+        position: relative;
+    }
+    /*Para organizar el primer hr*/
+
+    /*Organizar la posicion de la segunda imagen en pantallas grandes*/
+    .modalCarrito .contenedorScreenNormalCarrito .imagen2 {
+
+        bottom: 130px;
+        position: relative;
+    }
+    /*Organizar la posicion de la segunda imagen en pantallas grandes*/
+
+
+    /*Organizar la posicion del titulo de la segunda imagen en pantallas grandes*/
+    .modalCarrito .contenedorScreenNormalCarrito .titulo2 {
+
+        left: 180px;
+        bottom: 60px;
+        position: relative;
+    }
+    /*Organizar la posicion del titulo de la segunda imagen en pantallas grandes*/
+
+
+    /*Organizar la posicion del precio de la segunda imagen en pantallas grandes*/
+    .modalCarrito .contenedorScreenNormalCarrito .precio2 {
+
+        left: 280px;
+        bottom: 170px;
+        position: relative;
+    }
+    /*Organizar la posicion del precio de la segunda imagen en pantallas grandes*/
+
+
+    /*Organizar la posicion de la cantidad de la segunda imagen en pantallas grandes*/
+    .modalCarrito .contenedorScreenNormalCarrito .cantidad2 {
+
+        left: 400px;
+        width: 100px;
+        bottom: 212px;
+        position: relative;
+        border: 2px solid black;
+    }
+    /*Organizar la posicion de la cantidad de la segunda imagen en pantallas grandes*/
+
+
+    /*Organizar la posicion del total de la segunda imagen en pantallas grandes*/
+    .modalCarrito .contenedorScreenNormalCarrito .total2 {
+
+        left: 550px;
+        bottom: 255px;
+        position: relative;
+    }
+    /*Organizar la posicion del total de la segunda imagen en pantallas grandes*/
+
+
+    /*Organizar el segundo hr*/
+    .modalCarrito .contenedorScreenNormalCarrito .hr2 {
+
+        width: 660px;
+        bottom: 240px;
+        position: relative;
+    }
+    /*Organizar el segundo hr*/
+
+
+    /*Organizar la posicion de la tercera imagen en pantallas grandes*/
+    .modalCarrito .contenedorScreenNormalCarrito .imagen3 {
+
+        bottom: 270px;
+        position: relative;
+    }
+    /*Organizar la posicion de la tercera imagen en pantallas grandes*/
+
+
+    /*Organizar la posicion del titulo de la tercera imagen en pantallas grandes*/
+    .modalCarrito .contenedorScreenNormalCarrito .titulo3 {
+
+        left: 180px;
+        bottom: 200px;
+        position: relative;
+    }
+    /*Organizar la posicion del titulo de la tercera imagen en pantallas grandes*/
+
+
+    /*Organizar la posicion del precio de la tercera imagen en pantallas grandes*/
+
+    .modalCarrito .contenedorScreenNormalCarrito .precio3 {
+
+        left: 280px;
+        bottom: 310px;
+        position: relative;
+    }
+    /*Organizar la posicion del precio de la tercera imagen en pantallas grandes*/
+
+
+    /*Organizar la posicion de la cantidad de la tercera imagen en pantallas grandes*/
+    .modalCarrito .contenedorScreenNormalCarrito .cantidad3 {
+
+        left: 400px;
+        width: 100px;
+        bottom: 350px;
+        position: relative;
+        border: 2px solid black;
+    }
+    /*Organizar la posicion de la cantidad de la tercera imagen en pantallas grandes*/
+
+
+    /*Organizar la posicion del total de la tercera imagen en pantallas grandes*/
+    .modalCarrito .contenedorScreenNormalCarrito .total3 {
+
+        left: 550px;
+        bottom: 390px;
+        position: relative;
+    }
+    /*Organizar la posicion del total de la tercera imagen en pantallas grandes*/
+
+
+    /*Organizar el tercer hr*/
+    .modalCarrito .contenedorScreenNormalCarrito .hr3 {
+
+        width: 660px;
+        bottom: 380px;
+        position: relative;
+    }
+    /*Organizar el tercer hr*/
+
+
+    /*El total del pago*/
+    .modalCarrito .pagarScreenNormal {
+
+        left: 700px;
+        width: 400px;
+        height: 320px;
+        bottom: 750px;
+        position: relative;
+        border-radius: 10px;
+        border: 1px solid #000000;
+    }
+    /*El total del pago*/
+
+    /*Organizar la posicion del Subtotal de pago*/
+    .modalCarrito .pagarScreenNormal .subtotalNormal {
+
+        left: 300px;
+        bottom: 40px;
+        position: relative;
+    }
+    /*Organizar la posicion del Subtotal de pago*/
+
+
+    /*Organizar la posicion del envio*/
+    .modalCarrito .pagarScreenNormal .shippingNormal {
+
+        left: 300px;
+        bottom: 40px;
+        position: relative;
+    } 
+    /*Organizar la posicion del envio*/
+
+
+    /*Organizar la posicion del total*/
+    .modalCarrito .pagarScreenNormal .totalNormal {
+
+        left: 300px;
+        bottom: 40px;
+        position: relative;
+    }
+    /*Organizar la posicion del total*/
+ 
+
+    /*Botn de pago*/
+    .modalCarrito .btnScreenNormal {
+
+        left: 710px;
+        width: 380px;
+        height: 50px;
+        bottom: 730px;
+        color: #fff;
+        border: #A82C48;
+        position: relative;
+        background-color: #A82C48;
+    }
+    /*Botn de pago*/
+}
+
