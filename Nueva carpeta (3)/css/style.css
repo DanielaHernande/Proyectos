@@ -163,20 +163,12 @@ body #btnAbrirModalInfo {
 /*Estilos precio del carrito en pantallas pequeñas*/
 
 
-/*Estilos cantidad del carrito en pantallas pequeñas*/
-.modalCarrito .cantidadCarrito {
 
-    border-radius: 10px;
-    border: 2px solid black;
-}
-/*Estilos cantidad del carrito en pantallas pequeñas*/
-
-
-/*Estilos hr del carrito en pantallas pequeñas*/
+/*Estilos div del carrito en pantallas pequeñas*/
 .modalCarrito .separador {
-    border: 1px solid black;
+    border: 1px solid rgba(128, 128, 128, 0.541);
 }
-/*Estilos hr del carrito en pantallas pequeñas*/
+/*Estilos div del carrito en pantallas pequeñas*/
 
 /*Estilos hr del carrito en pantallas pequeñas*/
 .modalCarrito .pagar hr {
@@ -190,19 +182,37 @@ body #btnAbrirModalInfo {
     
     /*Tamaño del modal en pantallas pequeñas*/
     .modalCarrito {
-
+        
         height: 100%;
     }
     /*Tamaño del modal en pantallas pequeñas*/
+    
+    /*Estilos cantidad del carrito en pantallas pequeñas*/
+    .modalCarrito .divCantidad {
+    
+        width: 80px;
+        height: 30px;
+        border-radius: 10px;
+        border: 1px solid black;
+    }
+    /*Estilos cantidad del carrito en pantallas pequeñas*/
+    
+    .modalCarrito .divCantidad .cantidadCarrito {
+    
+        left: 17px;
+        bottom: 2px;
+        position: relative;
+    }
+
 
     /*Estilos del contenedor de pagar en pantallas pequeñas*/
     .modalCarrito .pagar {
     
-        height: 400px;
+        height: 350px;
         padding: 20px;
         margin-top: 60px;
         border-radius: 20px;
-        border: 2px solid black;
+        border: 1px solid black;
     }
     /*Estilos del titulo de pagar en pantallas pequeñas*/
 
@@ -210,8 +220,8 @@ body #btnAbrirModalInfo {
     /*Estilos del titulo de precio en pantallas pequeñas*/
     .modalCarrito .pagar .precioPagar {
         
-        top: -50px;
-        left: 320px;
+        top: -35px;
+        left: 200px;
         position: relative;
     }
     /*Estilos del titulo de precio en pantallas pequeñas*/
@@ -220,8 +230,8 @@ body #btnAbrirModalInfo {
     /*Estilos del titulo de envio en pantallas pequeñas*/
     .modalCarrito .pagar .envio {
     
-        top: -50px;
-        left: 320px;
+        top: -35px;
+        left: 200px;
         position: relative;
     }
     /*Estilos del titulo de envio en pantallas pequeñas*/
@@ -230,7 +240,7 @@ body #btnAbrirModalInfo {
     .modalCarrito .pagar .totalPagar {
     
         top: -60px;
-        left: 320px;
+        left: 200px;
         position: relative;
     }
     /*Estilos del titulo de total en pantallas pequeñas*/
@@ -239,18 +249,209 @@ body #btnAbrirModalInfo {
     /* Estilos del btn de checkoup en pantalals pequeñas*/
     .modalCarrito .btnScreenSmall {
 
-        height: 60px;
-        width: 469px;
+        height: 45px;
+        width: 315px;
         color: white;
-        font-size: 30px;
+        font-size: 20px;
         margin-top: 10px;
         border: #A82C48;
-        border-radius: 15px;
         background-color: #A82C48;
     }
     /* Estilos del btn de checkoup en pantalals pequeñas*/
 }
 
+@media screen and (min-width: 400px) {
+    
+    /*Tamaño del modal en pantallas pequeñas*/
+    .modalCarrito {
+        
+        height: 100%;
+    }
+    /*Tamaño del modal en pantallas pequeñas*/
+    
+    /*Estilos cantidad del carrito en pantallas pequeñas*/
+    .modalCarrito .divCantidad {
+    
+        width: 80px;
+        height: 30px;
+        border-radius: 10px;
+        border: 1px solid black;
+    }
+    /*Estilos cantidad del carrito en pantallas pequeñas*/
+    
+    .modalCarrito .divCantidad .cantidadCarrito {
+    
+        left: 17px;
+        bottom: 2px;
+        position: relative;
+    }
+
+
+    /*Estilos del contenedor de pagar en pantallas pequeñas*/
+    .modalCarrito .pagar {
+    
+        height: 350px;
+        padding: 20px;
+        margin-top: 60px;
+        border-radius: 20px;
+        border: 1px solid black;
+    }
+    /*Estilos del titulo de pagar en pantallas pequeñas*/
+
+    
+    /*Estilos del titulo de precio en pantallas pequeñas*/
+    .modalCarrito .pagar .precioPagar {
+        
+        top: -35px;
+        left: 200px;
+        position: relative;
+    }
+    /*Estilos del titulo de precio en pantallas pequeñas*/
+
+    
+    /*Estilos del titulo de envio en pantallas pequeñas*/
+    .modalCarrito .pagar .envio {
+    
+        top: -35px;
+        left: 200px;
+        position: relative;
+    }
+    /*Estilos del titulo de envio en pantallas pequeñas*/
+
+    /*Estilos del titulo de total en pantallas pequeñas*/
+    .modalCarrito .pagar .totalPagar {
+    
+        top: -60px;
+        left: 200px;
+        position: relative;
+    }
+    /*Estilos del titulo de total en pantallas pequeñas*/
+
+
+    /* Estilos del btn de checkoup en pantalals pequeñas*/
+    .modalCarrito .btnScreenSmall {
+
+        height: 45px;
+        width: 345px;
+        color: white;
+        font-size: 20px;
+        margin-top: 10px;
+        border: #A82C48;
+        background-color: #A82C48;
+    }
+    /* Estilos del btn de checkoup en pantalals pequeñas*/
+}
+
+
+@media screen and (min-width: 600px) {
+    
+    /*Estilos del contenedor de pagar en pantallas pequeñas*/
+    .modalCarrito .pagar {
+    
+        height: 350px;
+        padding: 20px;
+        margin-top: 60px;
+        border-radius: 20px;
+        border: 1px solid black;
+    }
+    /*Estilos del titulo de pagar en pantallas pequeñas*/
+
+    
+    /*Estilos del titulo de precio en pantallas pequeñas*/
+    .modalCarrito .pagar .precioPagar {
+        
+        top: -35px;
+        left: 300px;
+        position: relative;
+    }
+    /*Estilos del titulo de precio en pantallas pequeñas*/
+
+    
+    /*Estilos del titulo de envio en pantallas pequeñas*/
+    .modalCarrito .pagar .envio {
+    
+        top: -35px;
+        left: 300px;
+        position: relative;
+    }
+    /*Estilos del titulo de envio en pantallas pequeñas*/
+
+    /*Estilos del titulo de total en pantallas pequeñas*/
+    .modalCarrito .pagar .totalPagar {
+    
+        top: -60px;
+        left: 300px;
+        position: relative;
+    }
+    /*Estilos del titulo de total en pantallas pequeñas*/
+
+
+    /* Estilos del btn de checkoup en pantalals pequeñas*/
+    .modalCarrito .btnScreenSmall {
+
+        height: 45px;
+        width: 465px;
+        color: white;
+        font-size: 20px;
+        margin-top: 10px;
+        border: #A82C48;
+        background-color: #A82C48;
+    }
+    /* Estilos del btn de checkoup en pantalals pequeñas*/
+}
+
+@media screen and (min-width: 900px) {
+    
+
+    /*Estilos del titulo de precio en pantallas pequeñas*/
+    .modalCarrito .pagar .precioPagar {
+        
+        top: -45px;
+        left: 300px;
+        position: relative;
+    }
+    /*Estilos del titulo de precio en pantallas pequeñas*/
+
+    
+    /*Estilos del titulo de envio en pantallas pequeñas*/
+    .modalCarrito .pagar .envio {
+    
+        top: -45px;
+        left: 300px;
+        position: relative;
+    }
+    /*Estilos del titulo de envio en pantallas pequeñas*/
+
+    .modalCarrito .pagar .total {
+
+        top: -15px;
+        position: relative;
+    }
+
+
+    /*Estilos del titulo de total en pantallas pequeñas*/
+    .modalCarrito .pagar .totalPagar {
+    
+        top: -75px;
+        left: 300px;
+        position: relative;
+    }
+    /*Estilos del titulo de total en pantallas pequeñas*/
+
+
+    /* Estilos del btn de checkoup en pantalals pequeñas*/
+    .modalCarrito .btnScreenSmall {
+
+        height: 45px;
+        width: 465px;
+        color: white;
+        font-size: 20px;
+        margin-top: 10px;
+        border: #A82C48;
+        background-color: #A82C48;
+    }
+    /* Estilos del btn de checkoup en pantalals pequeñas*/
+}
 
 @media screen and (min-width: 1000px) {
 
@@ -337,7 +538,7 @@ body #btnAbrirModalInfo {
     .modalCarrito .btnScreenSmall {
 
         height: 70px;
-        width: 755px;
+        width: 765px;
         color: #fff;
         font-size: 35px;
         margin-top: 15px;
@@ -418,12 +619,7 @@ body #btnAbrirModalInfo {
     /*Organizar la posicion del total de la primera imagen en pantallas grandes*/
 
     /*Para organizar el primer hr*/
-    .modalCarrito .contenedorScreenNormalCarrito .hr1 {
 
-        width: 660px;
-        bottom: 100px;
-        position: relative;
-    }
     /*Para organizar el primer hr*/
 
     /*Organizar la posicion de la segunda imagen en pantallas grandes*/
@@ -478,12 +674,7 @@ body #btnAbrirModalInfo {
 
 
     /*Organizar el segundo hr*/
-    .modalCarrito .contenedorScreenNormalCarrito .hr2 {
 
-        width: 660px;
-        bottom: 240px;
-        position: relative;
-    }
     /*Organizar el segundo hr*/
 
 
@@ -540,12 +731,7 @@ body #btnAbrirModalInfo {
 
 
     /*Organizar el tercer hr*/
-    .modalCarrito .contenedorScreenNormalCarrito .hr3 {
 
-        width: 660px;
-        bottom: 380px;
-        position: relative;
-    }
     /*Organizar el tercer hr*/
 
 
