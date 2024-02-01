@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Estilos Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- Estilos css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet" href="./css/styleCarrito.css">
+    <script src="./js/index.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+
+  
+<!-- ============================================================== Modal del carrito =========================================================================================== -->
+
+    <!-- Button modal del carrito -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalCarrito" id="btnAbrirModalCarrito">
+  Boton carrito
+</button>
+
+<!-- Modal del carrito-->
+<div class="modal fade" id="modalCarrito" tabindex="-1" aria-labelledby="modalCarritoLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+
+      <div class="modal-body modalCarrito">
+
+          <h1 class="tituloPricipalCarrito text-center m-4 m-5">Your Cart</h1>
+
+          <div class="d-xl-none">
+            
+
+              <div class="primerContenedor">
+
+              <h2 class="mt-4 fs-4">PRODUCT</h2>
+              <h2 class="mb-4 fs-4">TITLE</h2>
+              <img src="./img/img-3.jpg" alt="#" class="img-fluid rounded-4">
+              <h2 class="mt-4 fs-4">PRICE</h2>
+              <p class="precioCarrito fs-5">$10.99 $12.30</p>
+              <h2 class="fs-4">QUANTITY</h2>
+
+              <div class="divCantidad mb-4 mt-4">
+                <button> - </button>
+                <p class="cantidadCarrito fs-5"> 0 </p>
+                <button> + </button>
+              </div>
+
+              <h2 class="fs-4">TOTAL</h2>
+              <p class="fs-5">$10.99</p>
+
+              </div>
+
+              <div class="segundoContenedor">
+
+                <h2 class="mt-4 fs-4">PRODUCT</h2>
+                <h2 class="mb-4 fs-4">TITLE</h2>
+                <img src="./img/img-3.jpg" alt="#" class="img-fluid rounded-4">
+                <h2 class="mt-4 fs-4">PRICE</h2>
+                <p class="precioCarrito fs-5">$10.99 $12.30</p>
+                <h2 class="fs-4">QUANTITY</h2>
+
+                <div class="divCantidad mb-4 mt-4">
+                  <button> - </button>
+                  <p class="cantidadCarrito fs-5"> 0 </p>
+                  <button> + </button>
+                </div>
+
+                <h2 class="fs-4">TOTAL</h2>
+                <p class="fs-5">$10.99</p>
+
+              </div>
+
+              <div class="tercerContnedor">
+
+                <h2 class="mt-4 fs-4">PRODUCT</h2>
+                <h2 class="mb-4 fs-4">TITLE</h2>
+                <img  src="./img/img-3.jpg" alt="#" class="img-fluid rounded-4">
+                <h2 class="mt-4 fs-4">PRICE</h2>
+                <p class="precioCarrito fs-5">$10.99 $12.30</p>
+                <h2 class="fs-4">QUANTITY</h2>
+
+                <div class="divCantidad mb-4 mt-4">
+                  <button> - </button>
+                  <p class="cantidadCarrito fs-5"> 0 </p>
+                  <button> + </button>
+                </div>
+                <h2 class="fs-4">TOTAL</h2>
+                <p class="fs-5">$10.99</p>
+
+              </div>
+
+            </div>
+
+            <div class="pagar d-xl-none">
+
+                <div class="">
+                  <h2 class="order fs-2 ms-2">Order Summary</h2>
+                </div>
+
+
+                <div class="">
+                  <h3 class="subtotal fs-2 ms-2 mt-4">Subtotal</h3>
+                  <p class="precioPagar fs-3">$458</p>
+
+                  <h3 class="shipping fs-2 ms-2">Shipping</h3>
+                  <p class="envio fs-3">Free</p>
+                </div>
+
+                <h2 class="total fs-2 ms-2 m-4">TOTAL</h2>
+                <p class="totalPagar fs-3">$458</p>
+            </div>
+
+          <button class="btnScreenSmall d-xl-none rounded-3 text-center">Checkout</button>
+          
+          
+          <div class="titulos d-flex flex-row ">
+            <h2 class="productTitulos d-none d-xl-block me-5 fs-5">PRODUCT</h2>
+            <h2 class="priceTitulos d-none d-xl-block me-5 fs-5">PRICE</h2>
+            <h2 class="cantidadTitulos d-none d-xl-block me-5 fs-5">QUANTITY</h2>
+            <h2 class="totaltitulos d-none d-xl-block me-5 fs-5">TOTAL</h2>
+          </div>
+
+          <div class="contenedorScreenNormalCarrito d-none d-xl-block">
+            
+            <div class="linea1">
+                <div class="separador"></div>
+                <h2 class="titulo1 fs-5">TITLE</h2>
+                <img src="./img/img-3.jpg" alt="#" class="img-fluid rounded-3">
+                <p class="precio1">$10.99 $12.30</p>
+
+                <div class="divCantidad mb-4 mt-4">
+                  <button> - </button>
+                  <p class="cantidadCarrito fs-5"> 0 </p>
+                  <button> + </button>
+                </div>
+
+                <p class="total1">$10.99</p>
+              </div>
+
+              <div class="linea2">
+                <h2 class="titulo2 fs-5">TITLE</h2>
+                <img src="./img/img-3.jpg" alt="#" class="imagen2 img-fluid rounded-3">
+                <p class="precio2">$10.99 $12.30</p>
+
+                <div class="divCantidad mb-4 mt-4">
+                  <button> - </button>
+                  <p class="cantidadCarrito fs-5"> 0 </p>
+                  <button> + </button>
+                </div>
+
+                <p class="total2">$10.99</p>
+              </div>
+
+              <div class="linea3">
+                <h2 class="titulo3 fs-5">TITLE</h2>
+                <img src="./img/img-3.jpg" alt="#" class="imagen3 img-fluid rounded-3">
+                <p class="precio3">$10.99 $12.30</p>
+
+                <div class="divCantidad mb-4 mt-4">
+                  <button> - </button>
+                  <p class="cantidadCarrito fs-5"> 0 </p>
+                  <button> + </button>
+                </div>
+                
+                <p class="total3">$10.99</p>
+              </div>
+          </div>
+
+          <div class="pagarScreenNormal d-none d-xl-block">
+              <h2 class="fs-3 ms-3">Order Summary</h2>
+              <div></div>
+
+              <h3 class="fs-3 ms-3">Subtotal</h3>
+              <p class="subtotalNormal fs-4">$458</p>
+
+              <h3 class="fs-3 ms-3">Shipping</h3>
+              <p class="shippingNormal fs-4">Free</p>
+              <div></div>
+
+              <h2 class="fs-3 ms-3">TOTAL</h2>
+              <p class="totalNormal fs-4">$458</p>
+          </div>
+
+          <button class="btnScreenNormal d-none d-xl-block fs-5 rounded-3">Checkout</button>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
