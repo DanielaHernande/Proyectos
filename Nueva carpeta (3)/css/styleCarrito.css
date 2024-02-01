@@ -1,0 +1,91 @@
+/*================= Estilos Modal carrito =================*/
+
+/*Estilos titulo principal en pantallas pequeñas*/
+.modalCarrito .tituloPricipalCarritoScreenSmall  {
+
+    bottom: 12px;
+    font-size: 40px;
+    position: relative;
+}
+/*Estilos titulo principal en pantallas pequeñas*/
+
+
+/*Estilos para el borde del contenedor de pagar*/
+.modalCarrito .pagar .divOrder {
+
+    border-bottom: 1px solid rgba(128, 128, 128, 0.541);
+}
+/*Estilos para el borde del contenedor de pagar*/
+
+
+/*Estilos para el borde del contenedor de pagar*/
+.modalCarrito .pagar .divSubtotal {
+
+    border-bottom: 1px solid rgba(128, 128, 128, 0.541);
+}
+/*Estilos para el borde del contenedor de pagar*/
+
+
+@media screen and (min-width: 355px) {
+            
+    /*Estilos del contenedor de pagar en pantallas pequeñas*/
+    .modalCarrito .pagar {
+    
+        height: 331px;
+        padding: 20px;
+        margin-top: 25px;
+        border-radius: 20px;
+        border: 1px solid rgba(0, 0, 0, 0.61);
+    }
+    /*Estilos del titulo de pagar en pantallas pequeñas*/
+
+    
+    /* Estilos del btn de checkoup en pantalals pequeñas*/
+    .modalCarrito .btnScreenSmall {
+
+        height: 45px;
+        width: 315px;
+        color: white;
+        font-size: 20px;
+        margin-top: 10px;
+        border: #A82C48;
+        background-color: #A82C48;
+    }
+    /* Estilos del btn de checkoup en pantalals pequeñas*/
+}
+
+
+.card-body .botones {
+
+
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: start;
+}
+
+
+.card-body .botones button{
+
+    width: 30px;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+
+    box-shadow: 2px 5px 2px rgba(0, 0, 0, 0.61);
+}
+
+.card-body .botones button:hover {
+
+    background-color: #A82C48;
+}
+
+.card-body .botones .valor {
+
+    width: 20px;
+
+    height: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
