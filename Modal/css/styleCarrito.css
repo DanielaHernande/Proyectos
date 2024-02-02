@@ -1,66 +1,83 @@
 /*================= Estilos Modal carrito =================*/
 
-/*Estilos titulo principal en pantallas pequeñas*/
-.modalCarrito .tituloPricipalCarritoScreenSmall  {
+/*Animacion del modal*/
+.modal-animation-open {
 
-    bottom: 12px;
-    font-size: 40px;
-    position: relative;
+    animation: fadeIn 0.4s ease-in-out;
 }
-/*Estilos titulo principal en pantallas pequeñas*/
 
+@keyframes fadeIn {
+    from { transform: scale(0.3);}
+    to {transform: scale(1);}
+}
+/*Animacion del modal*/
+
+/* Sombreado de las imagenes*/
 #modalCarrito .cards-container .card img
 {
     /*box-shadow: 0 0 0 var(--black-color);*/
     box-shadow: 0px 0px 8px 0px  rgba(102, 102, 102, 0.795);
-} 
+}     
+/* Sombreado de las imagenes*/
 
-
+/* Tamaño del texto en el precio en las tarjetas*/
 #modalCarrito .cards-container .card .card-price {
-
+    
     float: right;
     font-size: 1rem;
 }
+/* Tamaño del texto en el precio en las tarjetas*/
 
+/*Tamaño de texto de los h6 del contenedor de checkout*/
 #modalCarrito .cards-container .card .total-title {
 
     font-size: 1.1rem;
-}
+} 
+/*Tamaño de texto de los h6 del contenedor de checkout*/
 
+/*Tamaño de texto de los span de los h6 del contenedor de checkout*/
 #modalCarrito .cards-container .card .total-title span {
 
     float: right;
     font-size: 1rem;
-}
+}    
+/*Tamaño de texto de los span de los h6 del contenedor de checkout*/
 
-
+/* Para que la informacion siempre quede al lado derecho de la pantalla en el contenedor de checkout*/
 #modalCarrito .cards-container .card-final-price .card-subtitle span {
 
     float: right;
-}
+}  
+/* Para que la informacion siempre quede al lado derecho de la pantalla en el contenedor de checkout*/
 
-
+/* Estilos de selector de cantidad */
 #modalCarrito .cards-container .card .select-quantity {
 
     width: 55px;
     cursor: pointer;
-    outline-color: rgb(116, 18, 18);
+    outline-color: #A82C48;
 }
+/* Estilos de selector de cantidad */
 
-
+/* Media screen del carrito */
 @media screen and (min-width: 767px) {
 
+   /* Tamaño del modal del carrito*/
     #modalCarrito .modal-xl {
         --bs-modal-width: 730px;
     }
-}
+    /* Tamaño del modal */
+}    
 
 @media screen and (min-width: 991px) {
     
+    /* Tamaño del modal del carrito*/
     #modalCarrito .modal-xl {
         --bs-modal-width: 800px;
-    }
-
+    } 
+    /* Tamaño del modal del carrito*/
+    
+    /* Icono del modal que aprece en pantalals medianas, grandes en el modal del carrito*/
     .cart-icon-container
     {
         display: flex;
@@ -68,101 +85,152 @@
         align-items: center;
         height: 60%;
     }
-}
+    /* Icono del modal que aprece en pantalals medianas, grandes en el modal del carrito*/
+}    
 
 @media screen and (min-width: 1024px) {
 
+    /* Tamaño del modal del carrito*/
     #modalCarrito .modal-xl {
         --bs-modal-width: 950px;
     }
-}
+    /* Tamaño del modal del carrito*/    
+}    
 
 @media screen and (min-width: 1200px) {
     
+    /* Tamaño del modal del carrito*/
     #modalCarrito .modal-xl {
         --bs-modal-width: 1100px;
     }
-}
+    /* Tamaño del modal del carrito*/
+}    
 
 @media screen and (min-width: 1440px) {
 
+    /* Tamaño del modal del carrito*/
     #modalCarrito .modal-xl {
         --bs-modal-width: 1300px;
     }
-}
+    /* Tamaño del modal del carrito*/ 
+}    
 
-/*===========================================*/
+/*====================== Modal Informacion =====================*/
 
+/* Sombriado de las imagenes */
 #modalInfo .modal-body .card-body img {
     
-    box-shadow: 0px 0px 8px 0px  rgba(102, 102, 102, 0.795); 
+    box-shadow: 0px 0px 8px 0px  rgba(94, 94, 94, 0.795); 
 }
+/* Sombriado de las imagenes */
 
+/* Tamaño de los h3 en pantallas pequeñas */
 #modalInfo .modal-body .card-body h3 {
 
-    font-size: 1.1rem;
+    font-size: 1.3rem;
 }
+/* Tamaño de los h3 en pantallas pequeñas */
 
+/* Tamaño de los p en pantallas pequeñas */
 #modalInfo .modal-body .card-body p {
 
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
+/* Tamaño de los p en pantallas pequeñas */
 
+/*Boton abrir modal */
 #btnAbrirModalInfo {
 
     margin-top: 50px;
     margin-left: 50px;
     background-color: #A82C48;
 }
+/*Boton abrir modal */
 
+/* Media screen del modal de la informacio */
 @media screen and (min-width: 767px) {
 
+    /* Tamaño del modal de la informacion*/
     #modalInfo .modal-xl {
         --bs-modal-width: 730px;
     }
+    /* Tamaño del modal de la informacion*/
 
+    /* Tamaño de los h3 en pantallas pequeñas */
     #modalInfo .modal-body .card-body h3 {
 
-        font-size: 1.1rem;
+        font-size: 1.3rem;
     }
+    /* Tamaño de los h3 en pantallas pequeñas */
 
+    /* Tamaño de los h3 en pantallas pequeñas */
     #modalInfo .modal-body .card-body p {
 
         font-size: 1.1rem;
     }
+    /* Tamaño de los h3 en pantallas pequeñas */
+
 }
 
 @media screen and (min-width: 991px) {
     
+    /* Tamaño del modal */
     #modalInfo .modal-xl {
         --bs-modal-width: 800px;
     }
+    /* Tamaño del modal */
 
+    /* Centrado de los elementos del contenedor */
+    #modalInfo .modal-body .card-body .sub-container {
+
+        margin-top: -1.8rem;
+    }
+    /* Centrado de los elementos del contenedor */
+
+    /* Tamaño de los h3  */
     #modalInfo .modal-body .card-body h3 {
 
         font-size: 1.1rem;
     }
+    /* Tamaño de los  */
 
+    /* Tamaño de los p */
     #modalInfo .modal-body .card-body p {
 
         font-size: 1.1rem;
     }
+    /* Tamaño de los p */
 
 }
 
 @media screen and (min-width: 1024px) {
 
+    /* Tamaño del modal */
     #modalInfo .modal-xl {
-        --bs-modal-width: 950px;
+        --bs-modal-width: 1050px;
     }
+    /* Tamaño del modal */
 
+    /* Centrado de los elementos del contenedor */
+    #modalInfo .modal-body .card-body .sub-container {
+
+        margin-top: 1rem;
+    }
+    /* Centrado de los elementos del contenedor */
+
+
+    /* Tamaño de los h3 */
     #modalInfo .modal-body .card-body h3 {
 
-        font-size: 1.3rem;
+        font-size: 1.4rem;
     }
+    /* Tamaño de los h3 */
 
+
+    /* Tamaño de los p */
     #modalInfo .modal-body .card-body p {
 
-        font-size: 1.1rem;
+        font-size: 1.2rem;
     }
+    /* Tamaño de los p */
 }
