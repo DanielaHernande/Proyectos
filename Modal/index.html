@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Estilos Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <!-- Estilos css -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+
+  <link rel="stylesheet" href="./css/styleCarrito.css">
+  <script src="./js/index.js"></script>
+
+  <title>Document</title>
+</head>
+<body>
+
+
+  <!-- Button modal del carrito -->
+  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalCarrito" id="btnAbrirModalCarrito">
+    Boton carrito
+  </button>
+
+
+  <!-- Modal del carrito-->
+  <div class="modal fade" id="modalCarrito" tabindex="-1" aria-labelledby="modalCarritoLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <div class="modal-body modalCarrito d-block">
+
+          <h1 class="tituloPricipalCarritoScreenSmall text-center mt-4 d-block">Your Cart</h1>
+
+          <div>
+
+            <div class="container cards-container">
+              <div class="row p-0">
+
+                <div class="container d-flex flex-wrap col-lg-8">
+
+                
+                  <div class="card card-body d-flex col-12 col-lg-4 rounded-3 mx-2 my-2" style="width: 12rem;">  
+                    <div>
+                        <h3 class="card-title fs-2 fs-sm-4 text-center">TITLE</h3>
+                        <img src="./img/img-3.jpg" class="card-image img-fluid mx-auto my-3 rounded-3" alt="">
+                        <h3 class="fs-5 mt-3">PRICE
+                          <span class="card-price mb-3">$10.990</span>
+                        </h3>
+
+                        <div class="d-flex justify-content-between w-100">
+                          <h3 class="fs-5 mb-0">QUANTITY</h3>
+
+                          <select class="rounded-2 text-center select-quantity">
+                            <option value="uno">1</option>
+                            <option value="dos">2</option>
+                            <option value="tres">3</option>
+                            <option value="cuatro">4</option>
+                          </select>
+                        </div>
+
+                        <h3 class="total-title mt-3">TOTAL
+                          <span>$10.990</span>
+                        </h3>
+                      </div>
+                  </div>
+
+                  <div class="card card-body col-12 col-lg-4 rounded-3 mx-2 my-2" style="width: 12rem;">  
+                    <div>
+                        <h3 class="card-title fs-2 fs-sm-4 text-center">TITLE</h3>
+                        <img src="./img/img-3.jpg" class="card-image img-fluid mx-auto my-3 rounded-3" alt="">
+                        <h3 class="fs-5 mt-3">PRICE
+                          <span class="card-price mb-3">$10.990</span>
+                        </h3>
+
+                        <div class="d-flex justify-content-between w-100">
+                          <h3 class="fs-5 mb-0">QUANTITY</h3>
+
+                          <select class="rounded-2 text-center select-quantity">
+                            <option value="uno">1</option>
+                            <option value="dos">2</option>
+                            <option value="tres">3</option>
+                            <option value="cuatro">4</option>
+                          </select>
+                        </div>
+
+                        <h3 class="total-title mt-3">TOTAL
+                          <span>$10.990</span>
+                        </h3>
+                      </div>
+                  </div>
+
+                  <div class="card card-body col-12 col-lg-4 rounded-3 mx-2 my-2" style="width: 12rem;">  
+                    <div>
+                        <h3 class="card-title fs-2 fs-sm-4 text-center">TITLE</h3>
+                        <img src="./img/img-3.jpg" class="card-image img-fluid mx-auto my-3 rounded-3" alt="">
+                        <h3 class="fs-5 mt-3">PRICE
+                          <span class="card-price mb-3">$10.990</span>
+                        </h3>
+
+                        <div class="d-flex justify-content-between w-100">
+                          <h3 class="fs-5 mb-0">QUANTITY</h3>
+
+                          <select class="rounded-2 text-center select-quantity">
+                            <option value="uno">1</option>
+                            <option value="dos">2</option>
+                            <option value="tres">3</option>
+                            <option value="cuatro">4</option>
+                          </select>
+                        </div>
+
+                        <h3 class="total-title mt-3">TOTAL
+                          <span>$10.990</span>
+                        </h3>
+                      </div>
+                  </div>
+
+
+                  <div class="card card-body col-12 col-lg-4 rounded-3 mx-2 my-2" style="width: 12rem;">  
+                    <div>
+                        <h3 class="card-title fs-2 fs-sm-4 text-center">TITLE</h3>
+                        <img src="./img/img-3.jpg" class="card-image img-fluid mx-auto my-3 rounded-3" alt="">
+                        <h3 class="fs-5 mt-3">PRICE
+                          <span class="card-price mb-3">$10.990</span>
+                        </h3>
+
+                        <div class="d-flex justify-content-between w-100">
+                          <h3 class="fs-5 mb-0">QUANTITY</h3>
+
+                          <select class="rounded-2 text-center select-quantity">
+                            <option value="uno">1</option>
+                            <option value="dos">2</option>
+                            <option value="tres">3</option>
+                            <option value="cuatro">4</option>
+                          </select>
+                        </div>
+
+                        <h3 class="total-title mt-3">TOTAL
+                          <span>$10.990</span>
+                        </h3>
+                      </div>
+                  </div>
+                </div>   
+
+                <div class="col-lg-4">
+                  <div class="card card-final-price  w-100 rounded-4 mt-2" style="width: 18rem;">
+                    <div class="card-body">
+                      <h5 class="card-title mb-2">Order Summary</h5>
+                      <hr class="mt-2">
+                      <h6 class="card-subtitle mb-4 text-body-dark mt-4">Subtotal
+                        <span> $11.800</span>
+                      </h6>
+                      <h6 class="card-subtitle mb-2 text-body-dark">Shipping 
+                        <span>Free</span>
+                      </h6>
+                      <hr>
+                      <h6 class="card-subtitle mb-1 text-body-dark">Total 
+                        <span> $11.800</span>
+                      </h6>
+                    </div>
+                  </div>
+
+                  <button class="btn btn-primary rounded-3 text-center mt-2 w-100">CHECKOUT</button>
+
+                  <div class="cart-icon-container d-none d-lg-flex"> 
+                    <img class="img-fluid" src="https://www.zooplus.es/magazine/wp-content/uploads/2022/01/Psicologia-felina.jpeg" alt="">
+                  </div>
+
+                </div>
+
+
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
